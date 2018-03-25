@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.example.oukenghua.maphelper.Base.BaseActivity;
 import com.example.oukenghua.maphelper.R;
+import com.example.oukenghua.maphelper.Utils.ToastUtil;
 
 public class MainActivity extends BaseActivity {
 
@@ -20,7 +21,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void init(Bundle savedInstanceState) {
-
+        ToastUtil.setShortToast("欢迎使用");
     }
 
     @Override
