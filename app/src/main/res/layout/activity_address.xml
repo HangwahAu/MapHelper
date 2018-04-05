@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.oukenghua.maphelper.Activity.AddressActivity">
+
+    <android.support.v7.widget.Toolbar
+        app:title=" "
+        android:id="@+id/toolbar"
+        android:background="@color/Black"
+        app:titleTextColor="@color/Whtie"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="地址详细信息"
+            android:layout_gravity="center"
+            android:textColor="@color/Whtie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#f1f5f7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@drawable/img_background"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/community_image"
+                    android:layout_above="@+id/community_tv"
+                    android:src="@drawable/community_picture1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/community_tv"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/Whtie"
+                    android:background="@color/Black"
+                    android:text="福州市仓山区长安路89号"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="156dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_form"
+                    android:drawableTop="@drawable/bell_64"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="警情播报"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/Whtie"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_navigation"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/navigation"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        android:id="@+id/community_address"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/icon_navigation"
+                        android:layout_toLeftOf="@+id/address_qcode"
+                        android:textSize="16sp"
+                        android:textColor="@color/Black"
+                        android:text="福州市仓山区长安路89号原建专教工宿舍1座2梯"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/address_qcode"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:drawableTop="@drawable/qcode32"
+                        android:text="地址二维码"
+                        android:textSize="8sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/tv_round_blue"
+                        android:textColor="#0f7aff"
+                        android:text="进入梯位"
+                        android:textSize="13sp"
+                        android:layout_width="90dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/tv_round_blue"
+                        android:textColor="#0f7aff"
+                        android:text="返回上级"
+                        android:textSize="13sp"
+                        android:layout_width="90dp"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:textColor="#999999"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="公安管辖：对湖派出所程厝社区警务网络"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#999999"
+                        android:text="社区民警："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/Blue"
+                        android:text="李勤\n吴恒强"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@color/Whtie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@drawable/tv_form"
+                        android:drawableTop="@drawable/house_64"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="房屋出租"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@drawable/tv_form"
+                        android:drawableTop="@drawable/phone_64"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="一键报警"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@drawable/tv_form"
+                        android:drawableTop="@drawable/management_64"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="公安管理"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@drawable/tv_form"
+                        android:drawableTop="@drawable/wechat_64"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="微信交友"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@drawable/tv_form"
+                        android:drawableTop="@drawable/security_64"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="物业管理"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,15 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home_background"
     tools:context="com.example.oukenghua.maphelper.Activity.MainActivity">
 
-    <com.amap.api.maps.MapView
-        android:id="@+id/map"
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="100dp" />
 
-</LinearLayout>
+    <TextView
+        android:layout_above="@+id/scanning"
+        android:layout_marginBottom="10dp"
+        android:textColor="#666666"
+        android:text="点击下面按钮开启服务"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/scanning"
+        android:src="@drawable/scanning"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:text="扫一扫"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        android:layout_below="@+id/scanning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/scanning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="本软件基于福州市二维码门牌政策"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
