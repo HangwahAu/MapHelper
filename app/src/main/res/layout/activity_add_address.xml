@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <View
+        android:id="@+id/my_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/White" />
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/White"
+        android:id="@+id/toolbar"
+        app:title=" "
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/address_title"
+            android:text="添加地址"
+            android:textColor="@color/Black3"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/address_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="保存"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:background="@color/Grey206"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:background="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="序列号"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="父序列号"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="详细地址"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="公安管辖"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="社区民警"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:id="@+id/address_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入地址id"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:id="@+id/address_parent_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入地址父id"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:id="@+id/address_details"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="请输入地址信息"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:id="@+id/address_security"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="请输入公安信息"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <View
+                android:background="@color/Grey206"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:id="@+id/address_policemen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="请输入民警信息"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_qcode"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/White"
+        android:text="生成二维码门牌"
+        android:background="@drawable/orange_btn_bg"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/qcode_image"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:text="长按保存图片"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/Black9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

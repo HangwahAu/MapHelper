@@ -78,27 +78,21 @@ public class ScanActivity extends CaptureActivity implements DecoratedBarcodeVie
     private void initListener() {
         mBarcodeScannerView.setTorchListener(this);
 
-        mSwitchLightView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isLightOn) {
-                    mBarcodeScannerView.setTorchOff();
-                    tvFlashlight.setText("打开闪光灯");
-                } else {
-                    mBarcodeScannerView.setTorchOn();
-                    tvFlashlight.setText("关闭闪光灯");
-                }
+        mSwitchLightView.setOnClickListener(view -> {
+            if (isLightOn) {
+                mBarcodeScannerView.setTorchOff();
+                tvFlashlight.setText("打开闪光灯");
+            } else {
+                mBarcodeScannerView.setTorchOn();
+                tvFlashlight.setText("关闭闪光灯");
             }
         });
 
-        mOpenAlbumView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mQrSpotHelper == null) {
-                    mQrSpotHelper = new QRSpotHelper(ScanActivity.this, mOnSpotCallBack);
-                }
-                mQrSpotHelper.spotFromAlbum();
+        mOpenAlbumView.setOnClickListener(view -> {
+            if (mQrSpotHelper == null) {
+                mQrSpotHelper = new QRSpotHelper(ScanActivity.this, mOnSpotCallBack);
             }
+            mQrSpotHelper.spotFromAlbum();
         });
     }
 
@@ -181,6 +175,7 @@ public class ScanActivity extends CaptureActivity implements DecoratedBarcodeVie
         public void onSpotError() {
             mProgressBar.setVisibility(View.GONE);
             ToastUtil.setShortToast("未发现二维码");
+            finish();
         }
     };
 }

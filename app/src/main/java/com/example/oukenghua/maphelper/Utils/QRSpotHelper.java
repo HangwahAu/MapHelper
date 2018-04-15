@@ -64,12 +64,7 @@ public class QRSpotHelper {
             final Uri uri = data.getData();
             mSpotThread = new SpotThread(mHandler,getBmFromUri(uri));
             mSpotThread.start();
-            mHandler.postDelayed(new Runnable(){
-                @Override
-                public void run() {
-                    mHandler.sendEmptyMessage(HANDLER_ERROR);
-                }
-            },READ_OUT_TIME);
+            mHandler.postDelayed(() -> mHandler.sendEmptyMessage(HANDLER_ERROR),READ_OUT_TIME);
         }
     }
 

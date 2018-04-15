@@ -22,18 +22,13 @@
 
         <TextView
             android:textSize="22sp"
-            android:text="建筑物"
+            android:text="单元房"
             android:layout_gravity="center"
             android:textColor="@color/Black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
     </android.support.v7.widget.Toolbar>
-
-    <View
-        android:background="@color/Grey206"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"/>
 
     <LinearLayout
         android:background="@color/White"
@@ -42,39 +37,23 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/building_address"
-            android:textSize="13sp"
+            android:id="@+id/unitroom_address"
+            android:textSize="16sp"
             android:textColor="@color/Black"
             android:gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
             android:background="#87CEFA"
-            android:text="福州市仓山区长安路89号"
+            android:text="福州市仓山区长安路89号原建专教工宿舍3座"
             android:layout_width="match_parent"
             android:layout_height="40dp" />
 
-        <com.scwang.smartrefresh.layout.SmartRefreshLayout
-            android:id="@+id/refreshLayout"
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/recycler_unitroom"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <pl.droidsonroids.gif.GifImageView
-                android:src="@drawable/refresh_green"
-                android:scaleType="centerCrop"
-                android:layout_width="match_parent"
-                android:layout_height="150dp" />
-
-            <android.support.v7.widget.RecyclerView
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:id="@+id/recycler_building"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
-
-
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 

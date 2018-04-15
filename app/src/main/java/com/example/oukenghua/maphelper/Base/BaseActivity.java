@@ -7,6 +7,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+
+import com.blankj.utilcode.util.BarUtils;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -32,12 +36,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(getLayoutID());
         //ButterKnife绑定
         bind = ButterKnife.bind(this);
-        //沉浸式
-        if (Build.VERSION.SDK_INT >= 21) {
-            View decorView = getWindow().getDecorView();
-            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);
-        }
         //加载布局后执行该方法初始化类
         init(savedInstanceState);
         //加载数据
@@ -49,6 +47,30 @@ public abstract class BaseActivity extends AppCompatActivity {
     public abstract void init(Bundle savedInstanceState);
 
     public abstract void loadData();
+
+    /**
+     * 顶替系统状态栏达到沉浸式效果
+     *
+     * @param topBar
+     */
+    protected void takeLinearStatusBar(View topBar) {
+        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams)
+                topBar.getLayoutParams();
+        layoutParams.height = BarUtils.getStatusBarHeight();
+        topBar.setLayoutParams(layoutParams);
+    }
+
+    /**
+     * 顶替系统状态栏达到沉浸式效果
+     *
+     * @param topBar
+     */
+    protected void takeRelativeStatusBar(View topBar) {
+        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams)
+                topBar.getLayoutParams();
+        layoutParams.height = BarUtils.getStatusBarHeight();
+        topBar.setLayoutParams(layoutParams);
+    }
 
     @Override
     protected void onDestroy() {

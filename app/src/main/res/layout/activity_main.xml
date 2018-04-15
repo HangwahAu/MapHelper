@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/home_background"
+    android:fitsSystemWindows="true"
     tools:context="com.example.oukenghua.maphelper.Activity.MainActivity">
 
     <ImageView
@@ -15,6 +16,7 @@
         android:layout_height="100dp" />
 
     <TextView
+        android:id="@+id/test"
         android:layout_above="@+id/scanning"
         android:layout_marginBottom="10dp"
         android:textColor="#666666"
@@ -48,6 +50,19 @@
         android:layout_below="@+id/scanning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/btn_add"
+        android:text="管理地址"
+        android:textSize="18sp"
+        android:textColor="@color/Black6"
+        android:layout_below="@id/scanning"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
     <TextView
         android:layout_marginBottom="10dp"

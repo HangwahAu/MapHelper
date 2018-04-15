@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.oukenghua.maphelper.Activity.LoginActivity">
+
+    <View
+        android:id="@+id/my_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/White" />
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/White"
+        android:id="@+id/toolbar"
+        app:title=" "
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:text="登录"
+            android:textColor="@color/Black3"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- 账号 -->
+    <EditText
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:singleLine="true"
+        android:id="@+id/account_et"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="42dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        android:hint="帐号"/>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/edit_num"
+        android:background="@color/BackgroundColor"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"/>
+    <!-- 密码 -->
+    <EditText
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:id="@+id/password_et"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/line1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        android:hint="登录密码"/>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/BackgroundColor"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"/>
+
+    <com.dd.morphingbutton.impl.LinearProgressButton
+        android:id="@+id/btn_login"
+        android:text="登录"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:layout_height="50dp"
+        android:layout_width="300dp"/>
+
+
+
+</LinearLayout>

@@ -4,7 +4,28 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="Black3">#333333</color>
     <color name="Black">#000000</color>
-    <color name="Whtie">#ffffff</color>
+    <color name="Black6">#666666</color>
+    <color name="Black9">#999999</color>
+    <color name="White">#ffffff</color>
+    <color name="Red">#FF0000</color>
+    <color name="Yellow">#FFFF00</color>
     <color name="Blue">#0000FF</color>
+    <color name="Green">#008000</color>
+    <color name="Orange">#F0B66D</color>
+    <color name="Grey206">#CECECE</color>
+    <color name="BackgroundColor">#eaeaea</color>
+    <color name="lightBlue">#0f7aff</color>
+
+    <!--mb-->
+    <color name="mb_blue">#ff0099cc</color>
+    <color name="mb_blue_dark">#ff00719b</color>
+    <color name="mb_green">#ff99cc00</color>
+    <color name="mb_green_dark">#ff6d9b00</color>
+    <color name="mb_purple">#ffaa66cc</color>
+    <color name="mb_purple_dark">#ff8855aa</color>
+    <color name="mb_gray">#ffdedede</color>
+    <color name="mb_red">#ffff4444</color>
+    <color name="mb_red_dark">#ffcd3a3a</color>
 </resources>

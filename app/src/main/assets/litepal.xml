@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="mapHelperDB" />
+
+    <version value="9" />
+
+
+    <list>
+        <mapping class="com.example.oukenghua.maphelper.LitePalDao.Community"></mapping>
+        <mapping class="com.example.oukenghua.maphelper.LitePalDao.Building"></mapping>
+        <mapping class="com.example.oukenghua.maphelper.LitePalDao.UnitRoom"></mapping>
+    </list>
+
+
+
+</litepal>
